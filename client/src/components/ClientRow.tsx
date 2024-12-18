@@ -1,5 +1,5 @@
 import { Trash } from "lucide-react";
-import { useDeleteClient } from "../hooks/useDeleteClients";
+import { useDeleteClient } from "../hooks/useDeleteClient";
 const ClientRow = ({ client }) => {
     const { mutate: deleteClient, isLoading } = useDeleteClient();
     const handleDelete = () => {

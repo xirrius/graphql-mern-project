@@ -15,6 +15,7 @@ export function useDeleteClient() {
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["clients"] });
+      queryClient.invalidateQueries({ queryKey: ["projects"] });
     },
   });
 }
